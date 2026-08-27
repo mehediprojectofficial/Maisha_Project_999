@@ -307,7 +307,6 @@ module.exports = {
     // "babyteach", "babylist", etc. (glued, no space) are recognized as
     // this command and not treated as unknown commands.
     aliases: [
-      "baby",
       "babyteach",
       "babyautoteach",
       "babylist",
