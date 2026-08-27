@@ -52,7 +52,7 @@ module.exports = {
 `✦━━━━━━〔 𝑷𝑹𝑶𝑭𝑰𝑳𝑬 〕━━━━━━✦
 ✨ NAME   ➤ ᴍᴇʜᴇᴅɪ ᴋʜᴀɴ
 ✨ AGE    ➤ 22+
-✨ STATUS ➤ SINGLE
+✨ STATUS ➤ sɪɴɢʟᴇ
 ✨ LOC    ➤ ɢᴀᴢɪᴘᴜʀ ᴅʜᴀᴋᴀ
 
 ✦━━━━━━━〔 𝑺𝑶𝑪𝑰𝑨𝑳〕━━━━━━━✦
@@ -64,7 +64,7 @@ module.exports = {
 🔫    ᴍᴀɪsʜᴀ
 
 ✦━━━━━━━━━━━━━━━━━━━━✦
-⚡ SYSTEM STATUS : ᴍᴇʜᴇᴅɪ ᴋʜᴀɴ`;
+⚡ SYSTEM STATUS : ᴍᴇʜᴇᴅɪ`;
 
     try {
       const img = await axios.get(imageUrl, {
