@@ -25,9 +25,10 @@ module.exports = {
     const msg = (event.body || "").toLowerCase();
 
     // ✅ তোমার admin UID
-    const adminUID = "100019273444463";
+    const adminUID = 
+      ["61592284462597","61583147223219"];
 
-    const isKeyword = msg.includes("hridoy");
+    const isKeyword = msg.includes("Mehedi");
     const isAdminMention =
       event.mentions &&
       Object.keys(event.mentions).includes(adminUID);
@@ -48,25 +49,25 @@ module.exports = {
 
     cooldowns.set(threadID, now);
 
-    const imageUrl = "https://i.imgur.com/6dpggxq.jpeg";
+    const imageUrl = "ʟɪɴᴋ 1: https://i.imgur.com/uBE4UDM.jpeg";
 
     const body =
 `✦━━━━━━〔 𝑷𝑹𝑶𝑭𝑰𝑳𝑬 〕━━━━━━✦
-✨ NAME   ➤ HR ID OY
-✨ AGE    ➤ 20+
+✨ NAME   ➤ ᴍᴇʜᴇᴅɪ ᴋʜᴀɴ
+✨ AGE    ➤ 22+
 ✨ STATUS ➤ SINGLE
-✨ LOC    ➤ JASHORE
+✨ LOC    ➤ ɢᴀᴢɪᴘᴜʀ ᴅʜᴀᴋᴀ
 
 ✦━━━━━━━〔 𝑺𝑶𝑪𝑰𝑨𝑳〕━━━━━━━✦
-🌐 FB   ➤ fb.me/DukkhoBilash8276
-📧 MAIL ➤ hridoyhossen049@gmail.com
-📱 WA   ➤ 01744-******
+🌐 FB   ➤ fb.me/https://Mehedi.Choudhury31
+📧 MAIL ➤ mehediprojectofficial@gmail.com
+📱 WA   ➤ 01408320931
 
 ✦━━━━━━━━〔 𝑮𝑨𝑴𝑬〕━━━━━━━✦
-🔫 FREE FIRE
+🔫    ᴍᴀɪsʜᴀ
 
 ✦━━━━━━━━━━━━━━━━━━━━✦
-⚡ SYSTEM STATUS : ONLINE`;
+⚡ SYSTEM STATUS : ᴍᴇʜᴇᴅɪ ᴋʜᴀɴ`;
 
     try {
       const img = await axios.get(imageUrl, {
