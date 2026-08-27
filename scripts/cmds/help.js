@@ -147,10 +147,10 @@ module.exports = {
     }
 
     msg += `彡 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 彡\n\n`;
-    msg += `   👤  𝗔𝗱𝗺𝗶𝗻    : HR ID OY\n`;
+    msg += `   👤  𝗔𝗱𝗺𝗶𝗻    : ᴍᴀɪsʜᴀ\n`;
     msg += `   📩  𝗥𝗲𝗽𝗼𝗿𝘁    : ${prefix}callad (yourmsg)\n`;
     msg += `   ℹ️  𝗖𝗺𝗱 𝗜𝗻𝗳𝗼 : ${prefix}help <command>\n`;
-    msg += `   ⚡  𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 : HRIDOY`;
+    msg += `   ⚡  𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 : ᴍᴇʜᴇᴅɪ`;
 
 
     // ===== RANDOM GIF =====
