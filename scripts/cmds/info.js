@@ -31,7 +31,7 @@ module.exports = {
 
     const totalCommands = global.GoatBot?.commands?.size || 0;
 
-    const image = "https://files.catbox.moe/jrd0er.mp4";
+    const image = "https://files.catbox.moe/mdy4f6.mp4";
 
     const now = moment().tz("Asia/Dhaka");
     const date = now.format("MMMM Do YYYY");
