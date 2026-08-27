@@ -1,12 +1,13 @@
 const axios = require("axios");
 
-// Cooldown storage
 const cooldowns = new Map();
+
+const adminUID = ["61592284462597", "61583147223219"];
 
 module.exports = {
   config: {
     name: "hridoy",
-    version: "1.4.1",
+    version: "1.4.2",
     author: "Hridoy",
     role: 0,
     category: "Admin",
@@ -19,23 +20,19 @@ module.exports = {
   },
 
   onChat: async function ({ event, api }) {
-    // ✅ Self message ignore (bot এর নিজের মেসেজে রিপ্লাই বন্ধ)
     if (event.senderID === api.getCurrentUserID()) return;
 
     const msg = (event.body || "").toLowerCase();
 
-    // ✅ তোমার admin UID
-    const adminUID = 
-      ["61592284462597","61583147223219"];
+  
+    const isKeyword = msg.includes("mehedi");
 
-    const isKeyword = msg.includes("Mehedi");
     const isAdminMention =
-      event.mentions &&
-      Object.keys(event.mentions).includes(adminUID);
+      !!event.mentions &&
+      adminUID.some((id) => Object.keys(event.mentions).includes(id));
 
     if (!isKeyword && !isAdminMention) return;
 
-    // ✅ Cooldown per thread (config.countDown সেকেন্ড অনুযায়ী)
     const threadID = event.threadID;
     const now = Date.now();
     const cooldownMs = (module.exports.config.countDown || 3) * 1000;
@@ -49,7 +46,7 @@ module.exports = {
 
     cooldowns.set(threadID, now);
 
-    const imageUrl = "ʟɪɴᴋ 1: https://i.imgur.com/uBE4UDM.jpeg";
+    const imageUrl = "https://i.imgur.com/uBE4UDM.jpeg";
 
     const body =
 `✦━━━━━━〔 𝑷𝑹𝑶𝑭𝑰𝑳𝑬 〕━━━━━━✦
