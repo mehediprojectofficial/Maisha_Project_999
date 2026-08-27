@@ -21,12 +21,24 @@ module.exports.onLoad = async function ({ api }) {
   }
 
   const timerData = {
-  "12:00 AM": { text: "⌚┆এখন রাত ১২টা বাজে❥︎খাউয়া দাউয়া করে নেউ,🍽️🍛", video: "https://files.catbox.moe/8btwbx.mp4" },
-  "01:00 AM": { text: "⌚┆এখন রাত ১টা বাজে❥︎সবাই শুয়ে পড়ো,🌌💤", video: "https://files.catbox.moe/9iq1ki.mp4" },
-  "02:00 AM": { text: "⌚┆এখন রাত ২টা বাজে❥︎প্রেম না কইরা যাইয়া ঘুমা বেক্কল,😾🌠", video: "https://files.catbox.moe/g9zf5c.mp4" },
-  "03:00 AM": { text: "⌚┆এখন রাত ৩টা বাজে❥︎যারা ছ্যাকা খাইছে তারা জেগে আছে,🫠🌃", video: "https://files.catbox.moe/siojtf.mp4" },
-  "04:30 AM": {
-  text: `╭━━━〔 🌅 𝐅𝐀𝐉𝐑 • ফজরের সময় 〕━━━╮
+    "12:00 AM": { 
+      text: "⌚┆এখন রাত ১২টা বাজে❥︎খাউয়া দাউয়া করে নেউ,🍽️🍛", 
+      video: "https://files.catbox.moe/qwxaxf.mp4" 
+    },
+    "01:00 AM": { 
+      text: "⌚┆এখন রাত ১টা বাজে❥︎সবাই শুয়ে পড়ো,🌌💤", 
+      video: "https://files.catbox.moe/hllek9.mp4" 
+    },
+    "02:00 AM": { 
+      text: "⌚┆এখন রাত ২টা বাজে❥︎প্রেম না কইরা যাইয়া ঘুমা বেক্কল,😾🌠", 
+      video: "https://files.catbox.moe/f0f0ep.mp4" 
+    },
+    "03:00 AM": { 
+      text: "⌚┆এখন রাত ৩টা বাজে❥︎যারা ছ্যাকা খাইছে তারা জেগে আছে,🫠🌃", 
+      video: "https://files.catbox.moe/o6o4x1.mp4" 
+    },
+    "04:30 AM": {
+      text: `╭━━━〔 🌅 𝐅𝐀𝐉𝐑 • ফজরের সময় 〕━━━╮
 
 ﴾ ﷽ ﴿
 
@@ -38,17 +50,38 @@ module.exports.onLoad = async function ({ api }) {
 اللَّهُمَّ اجْعَلْنَا مِنَ الْمُقِيمِينَ لِلصَّلَاةِ
 
 ╰━━━━━━━━━━━━━━━━━━━━╯`,
-  video: "https://files.catbox.moe/ee9khu.mp4"
-},
-  "06:00 AM": { text: "⌚┆এখন সকাল ৬টা বাজে❥︎ঘুম থেকে উঠো সবাই,🌞☕", video: "https://files.catbox.moe/q9rf0f.mp4" },
-  "07:00 AM": { text: "⌚┆এখন সকাল ৭টা বাজে❥︎ব্রেকফাস্ট করে নাও,🍞", video: "https://files.catbox.moe/ztnm6a.mp4" },
-  "08:00 AM": { text: "⌚┆এখন সকাল ৮টা বাজে❥︎কাজ শুরু করো মন দিয়ে,🌤️✨", video: "https://files.catbox.moe/tb5xef.mp4" },
-  "09:00 AM": { text: "⌚┆এখন সকাল ৯টা বাজে❥︎চল কাজে মন দিই!🕘", video: "https://files.catbox.moe/2mi5oo.mp4" },
-  "10:00 AM": { text: "⌚┆এখন সকাল ১০টা বাজে❥︎তোমাদের মিস করছি,🌞☀️", video: "https://files.catbox.moe/q2vg9i.mp4" },
-  "11:00 AM": { text: "⌚┆এখন সকাল ১১টা বাজে❥︎কাজ চালিয়ে যাও!😌", video: "https://files.catbox.moe/zzm2xo.mp4" },
-  "12:00 PM": { text: "⌚┆এখন দুপুর ১২টা বাজে❥︎ভালোবাসা জানাও সবাইকে,❤️", video: "https://files.catbox.moe/g8d1av.mp4" },
-  "01:00 PM": {
-  text: `╭━━━〔 🕌 𝐙𝐔𝐇𝐑 • যোহরের সময় 〕━━━╮
+      video: "https://files.catbox.moe/ee9khu.mp4"
+    },
+    "06:00 AM": { 
+      text: "⌚┆এখন সকাল ৬টা বাজে❥︎ঘুম থেকে উঠো সবাই,🌞☕", 
+      video: "https://files.catbox.moe/ra38zm.mp4" 
+    },
+    "07:00 AM": { 
+      text: "⌚┆এখন সকাল ৭টা বাজে❥︎ব্রেকফাস্ট করে নাও,🍞", 
+      video: "https://files.catbox.moe/4uorbo.mp4" 
+    },
+    "08:00 AM": { 
+      text: "⌚┆এখন সকাল ৮টা বাজে❥︎কাজ শুরু করো মন দিয়ে,🌤️✨", 
+      video: "https://files.catbox.moe/sirbqe.mp4" 
+    },
+    "09:00 AM": { 
+      text: "⌚┆এখন সকাল ৯টা বাজে❥︎চল কাজে মন দিই!🕘", 
+      video: "https://files.catbox.moe/6k87h0.mp4" 
+    },
+    "10:00 AM": { 
+      text: "⌚┆এখন সকাল ১০টা বাজে❥︎তোমাদের মিস করছি,🌞☀️", 
+      video: "https://files.catbox.moe/cbfjmf.mp4" 
+    },
+    "11:00 AM": { 
+      text: "⌚┆এখন সকাল ১১টা বাজে❥︎কাজ চালিয়ে যাও!😌", 
+      video: "https://files.catbox.moe/7owx97.mp4" 
+    },
+    "12:00 PM": { 
+      text: "⌚┆এখন দুপুর ১২টা বাজে❥︎ভালোবাসা জানাও সবাইকে,❤️", 
+      video: "https://files.catbox.moe/jam83o.mp4" 
+    },
+    "01:00 PM": {
+      text: `╭━━━〔 🕌 𝐙𝐔𝐇𝐑 • যোহরের সময় 〕━━━╮
 
 ﴾ ﷽ ﴿
 
@@ -60,12 +93,18 @@ module.exports.onLoad = async function ({ api }) {
 رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ
 
 ╰━━━━━━━━━━━━━━━━━━━━╯`,
-  video: "https://files.catbox.moe/c5qbek.mp4"
-},
-  "02:00 PM": { text: "⌚┆এখন দুপুর ২টা বাজে❥︎দুপুরের খাবার খেয়েছো তো?🍛🌤️", video: "https://files.catbox.moe/nstu8b.mp4" },
-  "03:00 PM": { text: "⌚┆এখন বিকাল ৩টা বাজে❥︎কাজে ফোকাস করো,🧑‍🔧☀️", video: "https://files.catbox.moe/xmrujv.mp4" },
-  "04:30 PM": {
-  text: `╭━━━〔 🕌 𝐀𝐒𝐑 • আসরের সময় 〕━━━╮
+      video: "https://files.catbox.moe/c5qbek.mp4"
+    },
+    "02:00 PM": { 
+      text: "⌚┆এখন দুপুর ২টা বাজে❥︎দুপুরের খাবার খেয়েছো তো?🍛🌤️", 
+      video: "https://files.catbox.moe/7k1abr.mp4" 
+    },
+    "03:00 PM": { 
+      text: "⌚┆এখন বিকাল ৩টা বাজে❥︎কাজে ফোকাস করো,🧑‍🔧☀️", 
+      video: "https://files.catbox.moe/ryh763.mp4" 
+    },
+    "04:30 PM": {
+      text: `╭━━━〔 🕌 𝐀𝐒𝐑 • আসরের সময় 〕━━━╮
 
 ﴾ ﷽ ﴿
 
@@ -77,10 +116,10 @@ module.exports.onLoad = async function ({ api }) {
 اللَّهُمَّ تَقَبَّلْ مِنَّا
 
 ╰━━━━━━━━━━━━━━━━━━━━╯`,
-  video: "https://files.catbox.moe/vcgbxq.mp4"
-},
-  "06:30 PM": {
-  text: `╭━━━〔 🌇 𝐌𝐀𝐆𝐇𝐑𝐈𝐁 • মাগরিবের সময় 〕━━━╮
+      video: "https://files.catbox.moe/vcgbxq.mp4"
+    },
+    "06:30 PM": {
+      text: `╭━━━〔 🌇 𝐌𝐀𝐆𝐇𝐑𝐈𝐁 • মাগরিবের সময় 〕━━━╮
 
 ﴾ ﷽ ﴿
 
@@ -92,10 +131,10 @@ module.exports.onLoad = async function ({ api }) {
 اللَّهُمَّ تَقَبَّلْ مِنَّا
 
 ╰━━━━━━━━━━━━━━━━━━━━╯`,
-  video: "https://files.catbox.moe/y8pnz7.mp4"
-},
-  "08:00 PM": {
-  text: `╭━━━〔 🌙 𝐈𝐒𝐇𝐀 • এশার সময় 〕━━━╮
+      video: "https://files.catbox.moe/y8pnz7.mp4"
+    },
+    "08:00 PM": {
+      text: `╭━━━〔 🌙 𝐈𝐒𝐇𝐀 • এশার সময় 〕━━━╮
 
 ﴾ ﷽ ﴿
 
@@ -107,12 +146,22 @@ module.exports.onLoad = async function ({ api }) {
 آمِين يَا رَبَّ الْعَالَمِينَ
 
 ╰━━━━━━━━━━━━━━━━━━━━╯`,
-  video: "https://files.catbox.moe/rpnut9.mp4"
-},
-  "09:00 PM": { text: "⌚┆এখন রাত ৯টা বাজে❥︎ঘুমের প্রস্তুতি নাও,😴🌙", video: "https://files.catbox.moe/sxs5io.mp4" },
-  "10:00 PM": { text: "⌚┆এখন রাত ১০টা বাজে❥︎ঘুমাতে যাও, স্বপ্নে দেখা হবে,😴🙂↕️", video: "https://files.catbox.moe/0e4s7h.mp4" },
-  "11:00 PM": { text: "⌚┆এখন রাত ১১টা বাজে❥︎ভালোবাসা রইলো,🥰🌌", video: "https://files.catbox.moe/ndbhtu.mp4" }
-};
+      video: "https://files.catbox.moe/rpnut9.mp4"
+    },
+    "09:00 PM": { 
+      text: "⌚┆এখন রাত ৯টা বাজে❥︎ঘুমের প্রস্তুতি নাও,😴🌙", 
+      video: "https://files.catbox.moe/ndbhtu.mp4" 
+    },
+    "10:00 PM": { 
+      text: "⌚┆এখন রাত ১০টা বাজে❥︎ঘুমাতে যাও, স্বপ্নে দেখা হবে,😴🙂↕️", 
+      video: "https://files.catbox.moe/sxs5io.mp4" 
+    },
+    "11:00 PM": { 
+      text: "⌚┆এখন রাত ১১টা বাজে❥︎ভালোবাসা রইলো,🥰🌌", 
+      video: "https://files.catbox.moe/8btwbx.mp4" 
+    }
+  };
+
   const cacheDir = path.join(__dirname, "cache");
   if (!fs.existsSync(cacheDir)) {
     fs.ensureDirSync(cacheDir);
@@ -231,3 +280,4 @@ module.exports.onStart = async function ({ api, event, args }) {
     return api.sendMessage("❌ Invalid command! Please use: '/autotimer on' or '/autotimer off'", threadID, messageID);
   }
 };
+                                             
