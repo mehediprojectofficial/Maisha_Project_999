@@ -639,4 +639,16 @@ ${formatted}`
           );
         }
 
-        const 
+        const reply = await typingWhile(api, threadID, getSmartReply(q, threadID));
+        return message.reply(reply);
+      }
+
+    } catch (err) {
+      console.error(
+        "baby onChat error:",
+        err.response?.data?.error || err.response?.data?.message || err.message
+      );
+    }
+  }
+};
+
