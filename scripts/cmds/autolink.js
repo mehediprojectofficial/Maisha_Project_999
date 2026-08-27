@@ -3,14 +3,13 @@ const { downloadVideo } = require("sagor-video-downloader");
 
 module.exports = {
     config: {
-		guide: "{pn}", // auto-added: was missing, caused blank usage in help
         name: "autolink",
         version: "1.3",
         author: "MOHAMMAD AKASH",
         countDown: 5,
         role: 0,
         shortDescription: "Auto-download & send videos silently (no messages)",
-        category: "Media",
+        category: "media",
     },
 
     onStart: async function () {},
@@ -46,8 +45,13 @@ module.exports = {
 
                 await api.sendMessage(
                     {
-                        body:
-`📥 ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ...`,
+                        body:`♡‿♡✰ 𝐌𝐞𝐡𝐞𝐝𝐢 𝐊𝐡𝐚𝐧 ✰♡‿♡
+📥♡ 𝐋𝐨𝐯𝐞𝐲 𝐆𝐚𝐳𝐢𝐩𝐮𝐫 ♡⚡
+ ✰𝐌𝐚𝐢𝐬𝐡𝐚✰ ♡𝐌♡ ✬𝐌𝐨𝐮✬ 
+━━━━━━━━━━━━━━━  
+🎬 ᴛɪᴛʟᴇ: ${title || "Video File"}  
+📦 sɪᴢᴇ: ${fileSizeInMB.toFixed(2)} MB  
+━━━━━━━━━━━━━━━`,
                         attachment: fs.createReadStream(filePath)
                     },
                     threadID,
@@ -68,3 +72,4 @@ module.exports = {
         api.setMessageReaction(finalReaction, messageID, () => {}, true);
     }
 };
+
