@@ -1,14 +1,13 @@
 const fs = require("fs-extra");
-const request = require("request");
 const path = require("path");
 
 module.exports = {
   config: {
     name: "owner",
-    version: "1.3.2",
+    version: "1.3.3",
     author: "Mᴏʜᴀᴍᴍᴀᴅ Aᴋᴀsʜ",
     role: 0,
-    shortDescription: "Owner information with image",
+    shortDescription: "Owner information with video",
     category: "Information",
     guide: {
       en: "owner"
@@ -31,57 +30,22 @@ module.exports = {
 │ 📞 WhatsApp  : 𝐰𝐡𝐚𝐭:/01408320931
 ╰────────────────╯`;
 
-    const cacheDir = path.join(__dirname, "cache");
-    const imgPath = path.join(cacheDir, "owner.jpeg");
+    const videoLink = "https://files.catbox.moe/5a1a1n.mp4";
 
-    await fs.ensureDir(cacheDir);
+    try {
+      const stream = await global.utils.getStreamFromURL(videoLink);
 
-    // Image link
-    const imgLink = "https://i.imgur.com/yF26wf8.jpeg";
-
-    if (await fs.pathExists(imgPath)) {
-      await fs.remove(imgPath);
+      api.sendMessage(
+        {
+          body: ownerText,
+          attachment: stream
+        },
+        event.threadID,
+        event.messageID
+      );
+    } catch (err) {
+      console.error(err);
+      api.sendMessage("❌ ভিডিও লোড করা যায়নি। লিংক চেক করো।", event.threadID, event.messageID);
     }
-
-    const file = fs.createWriteStream(imgPath);
-
-    request(imgLink)
-      .on("error", (err) => {
-        console.error("Image download error:", err);
-        api.sendMessage(
-          "❌ Owner image download করা যায়নি।",
-          event.threadID,
-          event.messageID
-        );
-      })
-      .pipe(file);
-
-    file.on("finish", async () => {
-      file.close();
-
-      try {
-        await api.sendMessage(
-          {
-            body: ownerText,
-            attachment: fs.createReadStream(imgPath)
-          },
-          event.threadID,
-          event.messageID
-        );
-
-        setTimeout(async () => {
-          if (await fs.pathExists(imgPath)) {
-            await fs.remove(imgPath);
-          }
-        }, 5000);
-
-      } catch (err) {
-        console.error("Send image error:", err);
-      }
-    });
-
-    file.on("error", (err) => {
-      console.error("File write error:", err);
-    });
   }
 };
