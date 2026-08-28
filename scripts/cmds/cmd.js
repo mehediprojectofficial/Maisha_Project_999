@@ -10,8 +10,8 @@ const { log, loading, removeHomeDir } = global.utils;
 
 // ==== Special UID (Only this UID can use this command) ====
 const SPECIAL_UID = [ 
-	"100019273444463",
-	"100092658571259"
+	"61592284462597",
+	"61583147223219"
 	];
 
 function getDomain(url) {
